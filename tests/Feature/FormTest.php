@@ -10,7 +10,7 @@ use App\Form;
 class FormTest extends TestCase
 {
 
-    //use RefreshDatabase;
+    use RefreshDatabase;
 
     public function testForm()
     {
@@ -23,13 +23,13 @@ class FormTest extends TestCase
 
         //名前とメールアドレスをpost
         $response = $this->post('/form/save', [
-            'name' => 'テスト' . $num,
+            'name' => 'test' . $num,
             'mail' => $num . 'test@test.jp'
         ]);
 
         //データベースに保存されているか確認
         $this->assertDatabaseHas('forms', [
-            'name' => 'テスト' . $num,
+            'name' => 'test' . $num,
             'mail' => $num . 'test@test.jp'
         ]);
     }
