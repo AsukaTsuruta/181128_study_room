@@ -7,7 +7,7 @@ use Illuminate\Foundation\Testing\WithFaker;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use App\Form;
 
-class Form2Test extends TestCase
+class Form3Test extends TestCase
 {
 
     //use RefreshDatabase;
