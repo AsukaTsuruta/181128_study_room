@@ -24,7 +24,7 @@ class FormController extends Controller
         $form->name = $request->name;
         $form->mail = $request->mail;
         $form->save();
-        return response()->json();
+        return response()->json(;
     }
 
     public function delete(Request $request)
