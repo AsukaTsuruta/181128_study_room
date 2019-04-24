@@ -21,6 +21,7 @@
             <div class="complete"></div>
             <a href="/form" class="complete-btn"></a>
             <button class="btn">登録</button>
+            <button class="btn cancel">登録しない</button>
         </div>
     </div>
 @endsection
